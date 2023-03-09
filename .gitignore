@@ -1,0 +1,6 @@
+build/
+.cache/
+.rgignore
+compile_commands.json
+src/main.cpp
+deps/
