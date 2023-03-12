@@ -27,7 +27,7 @@ std::size_t Glyph::GetCharSize() const noexcept {
 }
 
 bool Glyph::IsVisible(std::size_t x, std::size_t y) const noexcept {
-	return ((*(m_pBitmap + y) >> x) & 1);
+	return ((*(m_pBitmap + y) >> (m_Width - x - 1)) & 1);
 }
 
 } // namespace psfpp
